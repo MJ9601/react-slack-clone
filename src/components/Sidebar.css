@@ -1,0 +1,62 @@
+.sidebar {
+  width: 25rem;
+  background-color: var(--bg-color);
+  color: aliceblue;
+  padding: 1.5rem 2rem;
+  height: calc(100vh - 6rem);
+  /* max-height: 100vh; */
+  position: sticky;
+}
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar__status {
+  display: flex;
+  align-items: center;
+}
+.sidebar__statusIcon {
+  background-color: rgb(145, 226, 24);
+  padding: 0.5rem;
+  height: 0.5rem;
+  width: 0.2rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+.sidebar__create {
+  position: relative;
+  border: honeydew 0.3rem solid;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.sidebar__createIcon {
+  position: absolute;
+  top: -1.2rem;
+  right: -1.3rem;
+  font-size: 3.5rem !important;
+  cursor: pointer;
+}
+.sidebar__name {
+  font-weight: 300;
+}
+.sidebar > hr {
+  width: 95%;
+  margin: 1.6rem auto;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+}
+.sidebar__channel_wrapper {
+  height: 35vh;
+  /* background-color: red; */
+  margin-left: 2rem;
+  overflow-y: scroll;
+}
+.sidebar__channel_wrapper::-webkit-scrollbar {
+  display: none;
+}
+.sidebar__create_channel {
+  position: absolute;
+  bottom: 1rem;
+}
